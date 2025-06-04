@@ -1,4 +1,4 @@
-# Contact form
+# Contact Form
 
 Responsive Front-End Mentor Challenge (HTML + CSS + JS)
 
