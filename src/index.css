@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+@theme {
+  /* ### Primary */
+  --color-Green-200-lighter: hsl(148, 38%, 91%);
+  --color-Green-600-medium: hsl(169, 82%, 27%);
+  --color-Green-900-darker: hsl(169, 87.50%, 15.70%);
+  --color-Red: hsl(0, 66%, 54%);
+
+  /* ### Neutral */
+  --color-Grey-500-medium: hsl(186, 15%, 59%);
+  --color-Grey-900-darker: hsl(187, 24%, 22%);
+
+  --font-Karla: "Karla", sans-serif;
+}
+
+* {
+  @apply box-border
+}
+
+body {
+  @apply text-base font-Karla
+}
+
+input, textarea {
+  @apply rounded-lg outline-none bg-none p-3 px-4 border-Grey-500-medium border transition-all ease-out w-full focus-within:border-Green-600-medium hover:border-Green-600-medium [&.error]:border-Red
+}
+.required {
+  @apply text-Green-600-medium ms-2
+}
